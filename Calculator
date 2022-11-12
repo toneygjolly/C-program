@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main(){
+    int n1,n2,choice,result;
+    printf("enter the two number\n");
+    scanf("%d%d",&n1,&n2);
+    printf("enter the option\n");
+    printf("1.add\n2.sub\n3.mul\n4.div\n");
+    scanf("%d",&choice);
+    //Add
+    if(choice==1){
+        result=n1+n2;
+        printf("result=%d",result);
+    }
+    //sub
+    else if(choice==2){
+        result=n1-n2;
+        printf("result=%d",result);
+    }
+    //mul
+    else if(choice==3){
+        result=n1*n2;
+        printf("result=%d",result);
+    }
+    //div
+    else if(choice==4){
+        result=n1/n2;
+        printf("result=%d",result);
+    }
+    else
+    {
+        printf("no answer\n");
+    }
+    
+    
+}
