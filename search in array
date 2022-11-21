@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main(){
+    int limit,i,a[100],searchkey,flag=0;
+    printf("enter the limit\n");
+    scanf("%d",&limit);
+    printf("enter the value\n");
+    for(i=0;i<limit;i++){
+        scanf("%d",&a[i]);
+    }
+    printf("enter the search element\n");
+    
+        scanf("%d",&searchkey);
+        for(i=0;i<limit;i++){
+            if(searchkey==a[i]){
+                flag=1;
+                break;
+            }
+        
+    }
+    if(flag==1){
+        printf("value found at position: %d",i+1);
+    }
+    else{
+        printf("value not found\n");
+    }
+    
+    
+}
