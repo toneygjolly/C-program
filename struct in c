@@ -1,0 +1,30 @@
+#include<stdio.h>
+struct student{
+    int name[50];
+    int id;
+    int mark[3];
+};
+int main(){
+    struct student s[4];
+    for(int j=0;j<4;j++){
+    printf("enter the id\n");
+    scanf("%d",&s[j].id);
+    printf("enter the student :%d name\n",j+1);
+    scanf("%s",s[j].name);
+    
+    
+    for(int i=0;i<3;i++){
+    printf("\nenter the mark:  %d of student: %d \n",j+1,i+1);
+    scanf("%d",&s[j].mark[i]);
+    }
+    }
+    
+    for(int j=0;j<4;j++){
+    printf("\nStudent id: %d",s[j].id);
+    printf("\nStudent name: %s",s[j].name);
+    printf("\nStudent mark:");   
+    for(int i=0;i<3;i++){
+    printf("\nmark %d:%d",i+1,s[j].mark[i]);
+    }
+    }
+}
